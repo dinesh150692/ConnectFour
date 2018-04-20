@@ -90,6 +90,9 @@ class App extends Component {
 
   boardOnClick = (row,col) =>{
     let board = this.state.board;
+    if(board[row][col] !== 0){
+      return;
+    }
       if(this.state.player1){
         board[row][col] = 1;
       }else{
