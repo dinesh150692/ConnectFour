@@ -47,6 +47,8 @@ class App extends Component {
       { x: 1, y: -1 },
       { x: -1, y: 1 },
       { x: -1, y: -1},
+      { x: -1, y: 0 },
+      { x: 0, y: -1 }
     ];
   loop:
   for (i = 0; i < checkConditions.length; i++, count = 0) {
