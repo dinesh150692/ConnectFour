@@ -90,14 +90,12 @@ class App extends Component {
 
   boardOnClick = (row,col) =>{
     let board = this.state.board;
-    if(this.state.board[row][col] === 0){
       if(this.state.player1){
         board[row][col] = 1;
       }else{
         board[row][col] = 2;
       }
       this.setState({board: board, player1: !this.state.player1}, () => {this.checkWhetherGameIsCompleted(row,col)});      
-    }
   }
 
 
